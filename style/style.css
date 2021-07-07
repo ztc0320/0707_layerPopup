@@ -1,0 +1,132 @@
+@charset "UTF-8";
+@import url(../Reset/style_Reset.css);
+
+
+h1 {
+    text-align: center;
+    margin: 40px;
+}
+
+div#wrap {
+    width: 1300px;
+    padding: 40px;
+    border: 1px solid #000;
+    margin: 40px auto;
+}
+
+div#contents {
+    width: 1200px;
+
+    margin: 0 auto;
+}
+
+#contents > div {
+    width: 400px;
+    height: 200px;
+    padding: 4px;
+    /*border: 1px solid #000;*/
+    margin: 4px;
+}
+
+/* 멀티탭 영역 시작 */
+button.tabBtn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+
+button.tabBtn:first-child {
+    background-color: #fff;
+    border-bottom-color: #fff;
+    left: 6px;
+}
+
+div.tabContents {
+    padding: 4px;
+    border: 1px solid #aaa;
+}
+
+div.tabContents table {
+    width: 100%;
+    /*border: 1px solid #000;*/
+}
+
+/*#noticeArea {
+    display: none;
+}*/
+#noticeArea td {
+    line-height: 34px;
+}
+
+#galleryArea {
+    display: none;
+}
+
+#galleryArea td {
+    height: 140px;
+    text-align: center;
+}
+
+/* 멀티탭 영역 끝 */
+
+
+/* 모달 레이어팝업 시작 */
+tr.popPoint {
+    cursor: pointer;
+}
+div#wrap #contents #bbs tr.popPoint:hover {
+    font-weight: bold;
+    font-size: 99%;
+    background-color: rgba(0,0,0,0.05);
+}
+div#layerBG {
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(0, 0, 0, 0.65);*/
+    /* 불투명 검정배경 - 모달 레이어 팝업 */
+
+    background-color: rgba(0, 0, 0, 0);
+        /* 투명 검정배경 - 레이어 팝업 */
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+div#layerPopup {
+    width: 470px;
+    padding: 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+
+    /* 화면 정중앙 시작 */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+#layerPopup h1 {
+    margin: 0 0 20px;
+}
+#layerPopup p {
+    font-size: 18px;
+    line-height: 28px;
+}
+#layerPopup div#btnArea {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: 20px;
+}
+#layerPopup button {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 12px;
+}
+/* 모달 레이어팝업 끝 */
